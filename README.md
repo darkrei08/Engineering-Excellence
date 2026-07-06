@@ -23,6 +23,11 @@ It is designed to work with **any programming language**, **any framework**, and
 * 🔒 Security by Design
 * ⚡ Performance by Design
 * ♿ Accessibility by Design
+* 🌐 Internationalization (i18n)
+* 🔎 SEO & Agentic Discoverability
+* 🧭 Environment-aware behavior
+* ✅ W3C Compliance
+* 🚀 Production Readiness
 * 📚 Documentation-first workflow
 * 🐳 Docker best practices
 * 📦 Dependency management
@@ -151,15 +156,20 @@ Performance is treated as a functional requirement.
 The skill encourages AI agents to:
 
 * Measure before optimizing
-* Avoid unnecessary complexity
+* Optimize Core Web Vitals and Lighthouse scores
 * Minimize allocations
 * Reduce unnecessary rendering
+* Optimize bundle size and prefer lazy loading when beneficial
 * Eliminate performance bottlenecks
+
+It aims for the highest realistically achievable scores — never sacrificing
+maintainability just to move a benchmark.
 
 ---
 
 # ♿ Accessibility
 
+Accessibility is a first-class requirement, never traded away for aesthetics.
 Whenever applicable, the generated software should target:
 
 * WCAG 2.2 AA
@@ -167,6 +177,49 @@ Whenever applicable, the generated software should target:
 * Keyboard navigation
 * Accessible forms
 * Proper focus management
+* ARIA only when necessary
+* W3C-compliant HTML and CSS
+
+---
+
+# 🌐 Internationalization
+
+Whenever applicable, applications are designed with internationalization in mind:
+
+* No hardcoded user-facing strings
+* Copy separated from logic
+* An architecture that allows future localization without major refactoring
+
+---
+
+# 🔎 SEO & Agentic Discoverability
+
+For public-facing applications, the skill generates the artifacts that make content
+discoverable by both search engines and AI agents:
+
+* Metadata, canonical URLs, and structured metadata
+* `sitemap.xml` and `robots.txt`
+* `llms.txt` / `llms-full.txt` for AI consumption
+* Semantic HTML and no duplicate content
+
+---
+
+# 🧭 Environment Awareness
+
+Behavior adapts automatically to the deployment environment:
+
+* Development and staging → `noindex`, `nofollow`
+* Production → indexing enabled
+* Administration panels, dashboards, and authenticated areas are never indexed
+
+---
+
+# 🚀 Production Readiness
+
+Production-ready software, when applicable, ships with i18n, accessibility, SEO and
+agentic SEO, `robots.txt` / `sitemap.xml` / `llms.txt`, security headers and CSP,
+compression, caching, health endpoints, structured logging, monitoring hooks, Docker,
+CI/CD, and environment-specific configuration.
 
 ---
 

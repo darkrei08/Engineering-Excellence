@@ -1,10 +1,11 @@
-# User Interaction
+# Frontend UX & Interaction
 
-Interactive elements should clearly communicate that they are interactive.
+Interactive elements must clearly communicate that they are interactive, and behave
+predictably across mouse, keyboard, and touch input.
 
 ## Cursor
 
-Always use `cursor: pointer` for interactive elements, including:
+Always use `cursor: pointer` on every interactive element, including:
 
 - buttons
 - links styled as buttons
@@ -14,34 +15,33 @@ Always use `cursor: pointer` for interactive elements, including:
 - icon buttons
 - dropdown triggers
 - switches
-- checkboxes with custom UI
-- radio buttons with custom UI
+- checkboxes and radio buttons with custom UI
 - any element with a click handler
 
-Never use `cursor: pointer` on non-interactive elements.
+Never use `cursor: pointer` on non-interactive elements — it falsely signals affordance.
 
-## Hover
+## States
 
-Interactive elements should provide visual hover feedback.
+Interactive elements should expose appropriate visual states:
 
-## Focus
+- **Hover** — visible feedback that the element responds to pointer input.
+- **Focus** — a visible focus indicator for keyboard users. Never remove focus outlines
+  unless they are replaced with an accessible alternative.
+- **Disabled** — a clear disabled appearance, and the element must not be operable
+  (no click handler firing, `cursor` reflecting the disabled state).
 
-Keyboard users must always receive a visible focus indicator.
+## Semantic HTML
 
-Never remove focus outlines unless replaced with an accessible alternative.
+Prefer semantic HTML over generic elements wired up with handlers.
+
+- Use `<button>`, `<a>`, `<input>`, and other native controls instead of clickable
+  `<div>` or `<span>`.
+- Native elements give you keyboard operability, focus management, and assistive-tech
+  semantics for free. Avoid re-implementing them unless absolutely necessary.
+
+See references/accessibility.md for the broader accessibility contract.
 
 ## Touch Targets
 
-Interactive controls should provide sufficiently large touch targets (minimum 44×44px when appropriate).
-
-## Accessibility
-
-Interactive elements should be keyboard accessible.
-
-Avoid clickable `<div>` or `<span>` unless absolutely necessary.
-
-Prefer semantic HTML elements such as:
-
-- button
-- a
-- input
+Interactive controls should provide sufficiently large touch targets (minimum
+44×44px when appropriate).
