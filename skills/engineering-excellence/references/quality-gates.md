@@ -1,4 +1,3 @@
 # Quality Gates
-- Tests
-- Coverage
-- Lint
+
+Require passing tests, lint, build, coverage, docs.
