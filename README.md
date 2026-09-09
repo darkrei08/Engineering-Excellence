@@ -22,12 +22,12 @@ the target agent's global skills directory. Works for pi, Claude Code, Gemini
 CLI, Cursor, Antigravity, and any agent `skills` supports:
 
 ```bash
-npx skills@latest add micio86dev/Engineering-Excellence \
-  --skill engineering-excellence --global --agent pi --copy --yes
+npx skills@latest add micio86dev/Engineering-Excellence --skill engineering-excellence --global --agent pi --copy --yes
 ```
 
-Swap `--agent pi` for `claude`, `gemini`, `cursor`, or `antigravity` (repeat per
-agent). This is the same mechanism as, e.g., `npx skills@latest add mattpocock/skills`.
+Keep it on **one line** — the `\` line-continuation is bash-only and breaks in
+PowerShell. Swap `--agent pi` for `claude`, `gemini`, `cursor`, or `antigravity`
+(repeat per agent). Same mechanism as, e.g., `npx skills@latest add mattpocock/skills`.
 
 ## 2. As a pi.dev plugin
 
