@@ -1,3 +1,9 @@
+## 1.2.0
+
+- Added host-aware platform testing: native Windows on Windows hosts and
+  WinBoat via Docker Compose only on supported non-Windows hosts.
+- Added explicit Windows evidence, preflight, cleanup, and `NOT RUN` rules.
+
 ## 1.1.0
 
 - Added Frontend UX guidance: cursor, hover/focus/disabled states, semantic HTML.

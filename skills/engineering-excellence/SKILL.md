@@ -15,6 +15,8 @@ guidance appears only as clearly marked examples.
 - Ask for clarification when requirements are incomplete — wait for approval before building.
 - Build the smallest correct solution, then refactor.
 - Apply quality gates before considering work complete.
+- For OS-specific behavior, load `references/platform-testing.md`; a Linux
+  container never substitutes for Windows verification.
 - Load the relevant reference documents below based on the current task. Do not load
   everything — load what the task needs.
 
@@ -36,6 +38,7 @@ Load a reference when its concern is in scope for the current task.
 - `references/code-review.md` — review dimensions
 - `references/engineering-score.md` — final quality reporting
 - `references/documentation.md` — keeping docs current
+- `references/platform-testing.md` — host-aware native Windows, WinBoat, and CI/VM verification
 
 ### Frontend & web
 - `references/interaction.md` — frontend UX: cursor, hover/focus/disabled states, semantic HTML, touch targets
