@@ -39,6 +39,7 @@ Load a reference when its concern is in scope for the current task.
 - `references/engineering-score.md` — final quality reporting
 - `references/documentation.md` — keeping docs current
 - `references/platform-testing.md` — host-aware native Windows, WinBoat, and CI/VM verification
+- `references/context-budget.md` — model context measurement, compaction thresholds, and reserve tuning
 
 ### Frontend & web
 - `references/interaction.md` — frontend UX: cursor, hover/focus/disabled states, semantic HTML, touch targets
