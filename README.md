@@ -22,7 +22,7 @@ the target agent's global skills directory. Works for pi, Claude Code, Gemini
 CLI, Cursor, Antigravity, and any agent `skills` supports:
 
 ```bash
-npx skills@latest add micio86dev/Engineering-Excellence --skill engineering-excellence --global --agent pi --copy --yes
+npx skills@latest add darkrei08/Engineering-Excellence --skill engineering-excellence --global --agent pi --copy --yes
 ```
 
 Keep it on **one line** — the `\` line-continuation is bash-only and breaks in
