@@ -15,6 +15,7 @@ guidance appears only as clearly marked examples.
 - Ask for clarification when requirements are incomplete — wait for approval before building.
 - Build the smallest correct solution, then refactor.
 - Apply quality gates before considering work complete.
+- Preserve human accountability while moving routine review into evidence-producing automated checks; load `references/agent-review-operating-model.md` for agent-written changes.
 - For OS-specific behavior, load `references/platform-testing.md`; a Linux
   container never substitutes for Windows verification.
 - Load the relevant reference documents below based on the current task. Do not load
@@ -36,6 +37,7 @@ Load a reference when its concern is in scope for the current task.
 - `references/testing.md` — testing expectations
 - `references/quality-gates.md` — checks required before completion
 - `references/code-review.md` — review dimensions
+- `references/agent-review-operating-model.md` — layered review, risk-scaled approval, convergence, reversibility, and incident-derived evaluator guidance
 - `references/engineering-score.md` — final quality reporting
 - `references/documentation.md` — keeping docs current
 - `references/platform-testing.md` — host-aware native Windows, WinBoat, and CI/VM verification
