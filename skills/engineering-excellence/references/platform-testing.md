@@ -9,10 +9,15 @@ container is not Windows verification.
 | --- | --- | --- |
 | Windows | The actual Windows host | Run PowerShell, Windows Node, installer, and CLI checks natively. Do not use WinBoat or Docker as a substitute. |
 | Linux with KVM and WinBoat prerequisites | WinBoat's supported Docker Compose backend | Start the real Windows guest, run the project command inside it, and collect guest evidence. |
+| Linux Proxmox PVE node | Disposable LXC or VM guest created with a Community Script | Validate commits and tasks inside the guest before production. Do not substitute Docker Compose on the local workstation that runs Pi. |
 | Linux without KVM, macOS, or another unsupported host | A real Windows VM or Windows CI runner | If none is available, report Windows verification as `NOT RUN`; do not call a Linux container Windows. |
 
 Detect the host from the runtime that launches the check, not from the target
 being tested. Record both host and guest identity in the result.
+
+## Proxmox LXC/VM validation guests
+
+Use disposable LXC or VM guests on a Proxmox PVE host for pre-production validation of commits and tasks. Create the guest with a Community Script, run the checks inside the guest, and tear it down after evidence is captured. Do not replace that host-level route with Docker Compose on the local Pi workstation.
 
 ## WinBoat preflight
 
