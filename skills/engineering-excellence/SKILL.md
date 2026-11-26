@@ -38,7 +38,7 @@ Load a reference when its concern is in scope for the current task.
 - `references/code-review.md` — review dimensions
 - `references/engineering-score.md` — final quality reporting
 - `references/documentation.md` — keeping docs current
-- `references/platform-testing.md` — host-aware native Windows, WinBoat, and CI/VM verification
+- `references/platform-testing.md` — host-aware native Windows, Proxmox LXC/VM, WinBoat, and CI/VM verification
 - `references/context-budget.md` — model context measurement, compaction thresholds, and reserve tuning
 
 ### Frontend & web
